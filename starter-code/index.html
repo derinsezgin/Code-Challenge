@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet"  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <title>F + F Watch</title>
+    
+    <style>
+
+    .header_copy  .head_test , .head_test2{
+        position:relative;
+       font-size:30px;
+       text-align:justify;
+       display: inline;    
+   }
+    .features_list-item{
+        
+        font-family: "Overpass", Arial, Helvetica, sans-serif;
+        font-size: 26px;
+    }
+    .h_copy{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .nav__sections-list .nav__sections-link--highlight {
+         background-color: orange;
+         padding-left: 0px;
+         padding-right: 0px;
+    }
+
+    .head_test {
+        position: relative;
+        display:flex;
+        margin: -14px;
+    }
+
+    .h_copy1 , .h_copy2{
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+
+     .pricing__card-top{
+       border-bottom: solid 2px black;
+   }
+
+   .detailedSection{   
+        border:1px solid pink;  
+        padding:15px;  
+        margin:10px;  
+   }
+
+  
+    .content .imgBox{
+      width: 70%;
+   }
+   .content .text-box , .imgBox{
+      width: 100%;
+   }
+   .swiper-slide{
+      height: 300px;
+   }
+
+   .content{
+       position: relative;
+       display: flex;
+       width: 100%;
+       justify-content: space-between;
+       align-items: center;
+   }
+ 
+   .content .text-box{
+       position: relative;
+       max-width: 600px;
+       margin-right: 20px;
+    }
+
+    .content .text-box h1{
+        color: #fff;
+        font-size: 3em;
+        margin-bottom: 10px;
+        line-height: 1.4em;
+        font-weight: 700;
+    }
+    
+    .content .text-box p{
+        color : #fff;
+    
+    }
+
+    .content .text-box a{
+        display: inline-block;
+        margin-top: 20px;
+        padding: 8px 20px;
+        background: #e51e2a;
+        color: #fff;
+        border-radius: 20px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-decoration: none;
+    }
+
+
+/**Design**/
+
+     .background{
+        position: relative;
+        right: 0;
+        top: 0;
+        background: linear-gradient(#ff54a2 , #ff575a);
+        border-radius: 20px 0 0 20px;
+        height: 40%;
+        width: 50%;
+ 
+    }
+
+        .content .text-box{
+        position: relative;
+        max-width: 600px;
+        margin-right: 20px;
+    }
+
+        .content .text-box h1{
+        color: black;
+        font-size: 3em;
+        margin-bottom: 10px;
+        line-height: 1.4em;
+        font-weight: 700;
+    }   
+
+        .content .text-box p{
+        color : black;
+
+    }
+
+       .content .text-box a{
+        display: inline-block;
+        margin-top: 20px;
+        padding: 8px 20px;
+        background: #e51e2a;
+        color: #fff;
+        border-radius: 20px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-decoration: none;
+    }
+
+       .content .text-box a:hover{
+           border: 1px solid black;
+           background-color: black;
+           transition: 1s;
+       }
+
+       .moreInfo{
+        padding-top: 2px;
+        padding-bottom: 2px;
+        text-align: justify;
+        font-size: 20;
+        font-family: "Overpass", Arial, Helvetica, sans-serif;
+    }
+
+        .features-2{
+        margin-left: 50px;
+    }
+
+    
+
+/**Slider**/
+        .swiper{
+         width: 90%;
+         padding-top: 50px;
+         padding-bottom: 50px;
+       }
+
+       .swiper-slide {
+         background-position:center;
+         background-size: cover;
+         width: 180px;
+         height: 300px;
+         display: flex;
+         justify-content:center;
+       }
+
+
+       .swiper-slide img {
+         display: block;
+         width: 90%;
+         
+       }
+
+       .content .imgBox{
+           width: 700px;
+           display: flex;
+           justify-content: flex-end;
+       }
+
+       .content .imgBox img{
+           max-width: 180px;
+       }
+
+       .swiper-slide img{
+           bottom: 0;
+           min-height: 100%;
+       }
+
+       .swiper-3d .swiper-slide-shadow-left,
+       .swiper-3d .swiper-slide-shadow-right{
+         background-image: none !important;
+         
+       }
+
+        @media (max-widht : 900px) {
+            header{
+                padding: 40px;
+            }
+        }
+        header{
+            padding: 40 px;
+        }
+        section{
+            padding: 150px 40px;
+        }
+ 
+    </style>
+
+</head>
+<body>
+    <div class="nav">
+        <ul class="nav__pages-list">
+            <li class="nav__pages-list-item">
+                <a class="nav__pages-link" href="/">HOME</a>
+            </li>
+            <!-- <li class="nav__pages-list-item">
+                <a class="nav__pages-link" href="/">CONTACT</a>
+            </li> -->
+        </ul>
+        <a class="nav__logo" href="#">
+            <img class="nav__logo-img" src="./images/F+F-logo-black.svg" alt="F+F Main Logo / Home Link">
+        </a>
+        <ul class="nav__sections-list">
+            <li class="nav__sections-link--highlight">
+                <a class="nav__sections-link" href="#features">FEATURES</a>
+            </li>
+            <li class="nav__sections-list-item">
+                <a class="nav__sections-link" href="#pricing">PRICES</a>
+            </li>
+        </ul>
+    </div>
+    
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__title">Form Over Function?</h1>
+            <h2 class="header__subtitle">Why Choose?</h2>
+            <p class="header__copy">
+                At <span class="header__copy--bold">F+F</span> we believe that you shouldn’t have to pick between a stunning product and one that works.  <span class="header__copy--bold">No compromises.</span> Just an outstanding wrist watch, built to last.</p>
+            <div class="head_test">
+                <p class="header_copy">Minimal yet , </p>
+                <p class="h_copy1">sharp</p>
+                </div>
+            <div class="head_test">
+                <p class="header_copy">Modern yet , </p>
+                <p class="h_copy2">timeless</p>
+            </div>
+        </div>
+        <br>    
+    </header>
+
+    <main>
+        <div id="features" class="features">
+            <div class="features__container">
+                <div class="features__column">
+                    <h3 class="features__title">Features:</h3>
+                    <ul class="features__list">
+                        <li class="features__list-item">
+                          <h3>A Massive 1.5 Inch Touch Screen</h3>
+                            <div>
+                                <ol>
+                                    <li>Size is what matters when it comes to a smart watch screen</li>
+                                    <li>Read all your notifications with plenty of space</li>
+                                </ol> 
+                            </div>
+                        </li>
+                        <li class="features__list-item">
+                           <h3>A Range of Watch Face Backgrounds to Choose From</h3>
+                            <div>Personalize your watch face to match your own unique style with many combinations of background images, clock styles and colors.</div>
+                        </li>
+                        <li class="features__list-item">
+                           <h3>Water Resistant up to 7 Feet</h3>
+                            <div>
+                                <ol>
+                                    <li>IP68 Weatherproof rating. </li>
+                                    <li>Fit to withstand dust, dirt and sand and resistant to submersion up to a maximum depth of 7 feet underwater for up to 30 minutes.</li>
+                                </ol> 
+                            </div>                   
+                        </li>
+                        <li class="features__list-item">
+                            <h3>Step Tracking, Heart Rate & Sleep Monitoring</h3>
+                            <div>
+                                <ol>
+                                    <li>Check out your step progress during the day with the in app-tracker. </li>
+                                    <li>Keep an eye on your heart rate easily and conveniently. And when you’re ready for your head to hit the pillow, track that too.</li>
+                                </ol> 
+                            </div>      
+                        </li>                      
+                    </ul>
+                </div>
+                <div class="features__column">
+                    <img class="features__image" src="./images/watch-side.png" alt="Side view of F+F Watch" >
+                </div>
+            </div>
+        </div>
+    <body>
+        <section class="features-2">
+    <div class="content">
+        <div class="text-box">
+            <h1>Detailed Information</h1>
+            <hr>
+            <ul>
+                <li class="info"> <h3>Notifications from Popular Apps</h3>
+                    <div class="moreInfo">
+                        Get all your notifications from all your accounts conveniently on your wrist
+                    </div>
+                </li>
+                <li class="info"> <h3>Up to 10 Days of Battery Life</h3>
+                    <div class="moreInfo">
+                        With a battery capacity up to 300mAh, you’ll have no problem getting through the week with plenty of charge to spare. 
+                    </div>
+                </li>
+                <li class="info"> <h3>Tracking your Steps, Heart Rate & Sleep</h3>
+                    <div class="moreInfo">
+                        <ol>
+                            <li>Check out your step progress during the day with the in app-tracker.</li>
+                            <li>Keep an eye on your heart rate easily and conveniently. And when you’re ready for your head to hit the pillow, track that too.</li>
+                        </ol>
+                    </div>
+                </li>         
+            </ul>
+            <a  href="#"> Learn More </a>
+        </div>
+        <div class="background">
+            <div class="imgBox">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"> <img src="./images/watch2.png" /> </div>
+                      <div class="swiper-slide"><img src="./images/watch1.png" /></div>
+                      <div class="swiper-slide"><img src="./images/watch3.png" /></div>
+                      <div class="swiper-slide"><img src="./images/watch4.png" /></div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+       </section>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+            var swiper = new Swiper(".mySwiper", {
+              effect: "coverflow",
+              grabCursor: true,
+              centeredSlides: true,
+              slidesPerView: "auto",
+              coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+              },
+              loop : false,
+            });
+    </script>
+
+    </body>
+        <div id="pricing" class="pricing">
+            <div class="pricing__container">
+                <h3 class="pricing__title">Pricing:</h3>
+                <div class="pricing__cards">
+                    <div class="pricing__card">
+                        <div class="pricing__card-top">
+                            <h4 class="pricing__card-title">Package 1:</h4>
+                            <p class="pricing__card-price">$89</p>
+                        </div>
+                        <div class="pricing__card-bottom">
+                            <head>Include in Package:</head>
+                           <ol>
+                               <li>Watch Face</li>
+                               <li>Interchangeable band(white)</li>
+                               <li>Charging cable</li>
+                           </ol>
+                        </div>
+                    </div>
+                    <div class="pricing__card">
+                        <div class="pricing__card-top">
+                            <h4 class="pricing__card-title">Package 2:</h4>
+                            <p class="pricing__card-price">$99</p>
+                        </div>
+                        <div class="pricing__card-bottom">
+                            <head>Include in Package:</head>
+                            <ol>
+                                <li>Everything in package 1</li>
+                                <li>Interchangeable band(black)</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="pricing__card">
+                        <div class="pricing__card-top">
+                            <h4 class="pricing__card-title">Package 3:</h4>
+                            <p class="pricing__card-price">$109</p>
+                        </div>
+                        <div class="pricing__card-bottom">
+                            <head>Include in Package:</head>
+                            <ol>
+                                <li>Everything in package 2</li>
+                                <li>Extra Charging Cable</li>
+                                <li>Warranty for 5 years</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <nav class="nav-footer">
+            <ul class="nav-footer__list">
+                <li class="nav-footer__list-item">
+                    <p class="nav-footer__link"> <meta name="keywords" content="HTML,CSS,XML,JavaScript"> 
+                        <a href="mailto:info@ff.com">info@ff.com</a> 
+                    </p>
+                </li>
+                <li class="nav-footer__list-item">
+                    <a class="nav-footer__link" href="/">
+                        <img class="nav-footer__logo" src="./images/F+F-logo-black.svg" alt="F+F Logo / Link to Home">
+                    </a>
+                </li>
+                <li class="nav-footer__list-item">
+                    <p class="nav-footer__link"><meta name="keywords" content="HTML,CSS,XML,JavaScript"> 
+                        <a href="tel:8671024337">867 - 102 - 4337</a>
+                    </p>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
